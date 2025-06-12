@@ -6,7 +6,7 @@ import io.cucumber.java.After;
 public class Hooks {
     @Before
     public void setUp() {
-        DriverFactory.initDriver();
+        DriverFactory.initDriver(browser);
     }
 
     @After

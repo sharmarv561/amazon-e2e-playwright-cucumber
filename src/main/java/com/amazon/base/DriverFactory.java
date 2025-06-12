@@ -7,7 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverFactory {
     private static WebDriver driver;
 
-    public static WebDriver initDriver() {
+    public static WebDriver initDriver(String browser) {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
