@@ -1,5 +1,7 @@
 package com.amazon.base;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import com.amazon.utils.LoggerUtil;
 import com.amazon.utils.ConfigReader;
@@ -24,4 +26,15 @@ public class BaseTest {
     public WebDriver getDriver() {
         return driver;
     }
+
+//    @Before
+//    public void setUpScenario() {
+//        setUp(); // calls BaseTest → sets up driver, config, logger
+//    }
+//
+//    @After
+//    public void tearDownScenario() {
+//        tearDown(); // quits the driver
+//    }
+
 }

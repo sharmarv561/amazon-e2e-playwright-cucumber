@@ -3,14 +3,14 @@ package com.amazon.base;
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 
-public class Hooks {
+public class Hooks extends BaseTest {
     @Before
-    public void setUp() {
-        DriverFactory.initDriver(browser);
+    public void setUpScenario() {
+        setUp();
     }
 
     @After
-    public void tearDown() {
-        DriverFactory.quitDriver();
+    public void tearDownScenario() {
+        tearDown();
     }
 }
